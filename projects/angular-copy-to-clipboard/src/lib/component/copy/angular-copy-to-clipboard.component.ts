@@ -20,7 +20,7 @@ export class AngularCopyToClipboardComponent implements OnInit {
     this.iconColor = this.color;
   }
   public copy(): void {
-    if(!this.targetId){
+    if (!this.targetId) {
       this.error.emit(true);
       return;
     }
@@ -38,7 +38,9 @@ export class AngularCopyToClipboardComponent implements OnInit {
         selection?.removeAllRanges();
         selection?.addRange(range);
         const res = document.execCommand('copy');
-        if (!res) {
+        if (res) {
+          this.success.emit(true);
+        } else {
           this.error.emit(true);
         }
       }
