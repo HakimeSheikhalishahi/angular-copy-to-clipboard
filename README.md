@@ -3,11 +3,11 @@
 <h2 align="center">Angular Copy To Clipboard (Directive/Component/Content projection)</h2>
  
  ![copyToClipboard](https://user-images.githubusercontent.com/51107856/174605200-ced132ae-41bc-4911-b737-498a7c3d3e28.png?raw=true "Angular Copy To Clipboard")
-<!-- # Demo
+# Demo
 
-<a href='https://stackblitz.com/edit/angular-13-oonew7?file=src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html'>
+<a href='https://stackblitz.com/edit/angular-13-oonew7?file=src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html,src%2Fapp%2Fapp.component.html'>
 stackblitz
-</a> -->
+</a>
 
 # Copy to clipboard by three ways:
 
@@ -76,7 +76,7 @@ export class AppModule {}
 - ## As Content projection
 
 ```html
-<angular-copy-to-clipboard [content]="'copy me'" (copyError)="error()">
+<angular-copy-to-clipboard [targetId]="'copy-me'" (copyError)="error()">
   My component or html element
 </angular-copy-to-clipboard>
 ```
