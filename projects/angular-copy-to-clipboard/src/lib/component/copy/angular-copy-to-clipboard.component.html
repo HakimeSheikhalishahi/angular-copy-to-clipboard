@@ -1,4 +1,7 @@
-<span class="icon" [style.width.rem]="width" [style.height.rem]="height" (click)="copy()">
+<div #ref class="d-inline-block" (click)="copy()">
+    <ng-content></ng-content>
+</div>
+<span  *ngIf="!ref.children.length" class="icon" [style.width.rem]="width" [style.height.rem]="height" (click)="copy()">
     <svg class="solid" viewBox="0 0 115.77 122.88" height="100%" width="100%" x="0px" y="0px">
         <g>
             <path
@@ -6,6 +9,3 @@
         </g>
     </svg>
 </span>
-<div class="d-inline-block" (click)="copy()">
-    <ng-content></ng-content>
-</div>

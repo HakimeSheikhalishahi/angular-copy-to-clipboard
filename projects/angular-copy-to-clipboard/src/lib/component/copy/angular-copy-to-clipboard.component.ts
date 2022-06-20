@@ -31,5 +31,6 @@ export class AngularCopyToClipboardComponent implements OnInit {
     ).catch(e => {
       this.error.emit(true);
     });
+    
   }
 }

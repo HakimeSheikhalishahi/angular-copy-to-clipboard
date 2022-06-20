@@ -3,11 +3,11 @@
 <h2 align="center">Angular Copy To Clipboard (Directive/Component/Content projection)</h2>
  
  ![copyToClipboard](https://user-images.githubusercontent.com/51107856/174605200-ced132ae-41bc-4911-b737-498a7c3d3e28.png?raw=true "Angular Copy To Clipboard")
-# Demo
+<!-- # Demo
 
-<a href='https://stackblitz.com/edit/angular-zavrzb?file=src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html'>
+<a href='https://stackblitz.com/edit/angular-13-oonew7?file=src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html'>
 stackblitz
-</a>
+</a> -->
 
 # Copy to clipboard by three ways:
 
@@ -49,8 +49,8 @@ export class AppModule {}
 
 ```html
 <angular-copy-to-clipboard
-  [height]="50"
-  [width]="50"
+  [height]="2"
+  [width]="2"
   [color]="'#3456cc'"
   [targetId]="'copy-me'"
   (error)="error()"
@@ -98,8 +98,8 @@ export class AppModule {}
 | -------- | ----------------- | ------- | --------- | ------------------------------------------------ |
 | content  | `string` `number` |         | no        | The content that you want to copy.               |
 | targetId | `string` `number` |         | -         | The Element Id of content that you want to copy. |
-| width    | `number`          | `25px`  | no        | Icon width when use as component.                 |
-| height   | `number`          | `25px`  | no        | Icon height when use as component.               |
+| width    | `number`          | `1.3rem`  | no        | Icon width when use as component.                 |
+| height   | `number`          | `1.3rem`  | no        | Icon height when use as component.               |
 | color    | `string`          | `gray`  | no        | Icon color when use as component.               |
 
 # Output
