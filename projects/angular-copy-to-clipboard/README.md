@@ -19,13 +19,9 @@ stackblitz
 
 - [Install](#install)
 - [Quick start](#quick-start)
-- [Import style and icon](#import-style-and-icon)
 - [How to use?](#how-to-use)
 - [Input](#input)
 - [Output](#output)
-- [Field properties and methods](#field-properties-and-methods)
-- [Button setting](#button-setting)
-- [Validators](#validators)
 - [Creator](#creator)
 - [Donate](#donate)
 - [License](#license)
@@ -104,7 +100,7 @@ export class AppModule {}
 | targetId | `string` `number` |         | -         | The Element Id of content that you want to copy. |
 | width    | `number`          | `25px`  | no        | Icon with when use as component.                 |
 | height   | `number`          | `25px`  | no        | Icon height when use as component.               |
-| color    | `string`          | `gray`  | no        | Icon color when use as component.                |
+| color    | `string`          | `gray`  | no        | Icon color when use as component.               |
 
 # Output
 

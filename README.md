@@ -19,13 +19,9 @@ stackblitz
 
 - [Install](#install)
 - [Quick start](#quick-start)
-- [Import style and icon](#import-style-and-icon)
 - [How to use?](#how-to-use)
 - [Input](#input)
 - [Output](#output)
-- [Field properties and methods](#field-properties-and-methods)
-- [Button setting](#button-setting)
-- [Validators](#validators)
 - [Creator](#creator)
 - [Donate](#donate)
 - [License](#license)
