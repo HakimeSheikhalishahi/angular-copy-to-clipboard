@@ -1,6 +1,6 @@
 {
   "name": "angular-copy-to-clipboard",
-  "version": "0.0.6",
+  "version": "0.0.7",
   "peerDependencies": {
     "@angular/common": "^13.1.0",
     "@angular/core": "^13.1.0"

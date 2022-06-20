@@ -94,18 +94,17 @@ export class AppModule {}
 
 # Input
 
-| Name     | Type              | Default | Required? | Description                                      |
-| -------- | ----------------- | ------- | --------- | ------------------------------------------------ |
-| content  | `string` `number` |         | no        | The content that you want to copy.               |
-| targetId | `string` `number` |         | -         | The Element Id of content that you want to copy. |
-| width    | `number`          | `1.3rem`  | no        | Icon width when use as component.                 |
-| height   | `number`          | `1.3rem`  | no        | Icon height when use as component.               |
-| color    | `string`          | `gray`  | no        | Icon color when use as component.               |
+| Name     | Type              | Default  | Required? | Description                                      |
+| -------- | ----------------- | -------- | --------- | ------------------------------------------------ |
+| targetId | `string` `number` |          | yes         | The Element Id of content that you want to copy. |
+| width    | `number`          | `1.3rem` | no        | Icon width when use as component.                |
+| height   | `number`          | `1.3rem` | no        | Icon height when use as component.               |
+| color    | `string`          | `gray`   | no        | Icon color when use as component.                |
 
 # Output
 
-| Name      | Description                |
-| --------- | -------------------------- |
+| Name      | Description                 |
+| --------- | --------------------------- |
 | (error)   | Define message for error.   |
 | (success) | Define message for success. |
 

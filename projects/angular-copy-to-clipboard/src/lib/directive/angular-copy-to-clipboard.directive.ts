@@ -4,7 +4,6 @@ import { Directive, EventEmitter, HostListener, Input, Output } from '@angular/c
   selector: '[copyToClipboard]'
 })
 export class AngularCopyToClipboardDirective {
-  @Input() content!: string | number;
   @Input() targetId!: string | number;
   @Output() success: EventEmitter<boolean> = new EventEmitter();
   @Output() error: EventEmitter<boolean> = new EventEmitter();
@@ -15,15 +14,28 @@ export class AngularCopyToClipboardDirective {
     this.copy();
   }
   public copy(): void {
-    if (this.targetId) {
-      const target = document.getElementById(this.targetId.toString());
-      this.content = target?.innerText || '';
+    if(!this.targetId){
+      this.error.emit(true);
+      return;
     }
-    navigator.clipboard.writeText(this.content.toString()).then(() => {
+    const target = document.getElementById(this.targetId.toString());
+    navigator.clipboard.writeText(target?.innerText || '').then(() => {
       this.success.emit(true);
     }
     ).catch(e => {
-      this.error.emit(true);
+      const range = document.createRange();
+      const selection = window.getSelection();
+      if (!target) {
+        this.error.emit(true);
+      } else {
+        range.selectNodeContents(target);
+        selection?.removeAllRanges();
+        selection?.addRange(range);
+        const res = document.execCommand('copy');
+        if (!res) {
+          this.error.emit(true);
+        }
+      }
     });
   }
 }
