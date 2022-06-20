@@ -10,8 +10,8 @@ export class AngularCopyToClipboardComponent implements OnInit {
   @Output() error: EventEmitter<boolean> = new EventEmitter();
   @Input() targetId!: string | number;
   @Input() content!: string | number;
-  @Input() height: number = 25;
-  @Input() width: number = 25;
+  @Input() height: number = 1.3;
+  @Input() width: number = 1.3;
   @Input() color: string = 'gray';
   hasGradient: boolean = false;
   @HostBinding("style.--c-i-color") iconColor: string = '';
