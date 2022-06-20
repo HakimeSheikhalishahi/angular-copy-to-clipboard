@@ -1,0 +1,15 @@
+.icon{
+    display: inline-block;
+    margin: .3125rem;
+}
+
+svg.solid path{
+    fill: var(--c-i-color);
+}
+.d-inline-block{
+    display: inline-block;
+}
+svg.gradient  path{
+  /* fill: url(#shape-gradient) ; */
+}
+

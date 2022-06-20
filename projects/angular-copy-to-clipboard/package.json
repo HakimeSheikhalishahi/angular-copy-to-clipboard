@@ -1,0 +1,39 @@
+{
+  "name": "angular-copy-to-clipboard",
+  "version": "0.0.1",
+  "peerDependencies": {
+    "@angular/common": "^13.1.0",
+    "@angular/core": "^13.1.0"
+  },
+  "dependencies": {
+    "tslib": "^2.3.0"
+  },
+  "description": "Angular Copy To Clipboard (Directive/Component/Content projection)",
+  "author": {
+    "name": "Hakime sheikhalishahi",
+    "email": "h.sheykhalishahi@gmail.com"
+  },
+  "keywords": [
+    "angular",
+    "library",
+    "copy-paste",
+    "front-end",
+    "pipe",
+    "directive",
+    "content-projection",
+    "angular-copy",
+    "component",
+    "angular-copy-to-clipboard",
+    "ngx-copy-to-clipboard",
+    "copy-to-clipboard",
+    "copy-to-clipboard-npm",
+    "angular-copy-to-clipboard-npm",
+    "copy-icon",
+    "copy-icon-color",
+    "angular-copy-to-clipboard-directive",
+    "copy-to-clipboard-directive"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/HakimeSheikhalishahi/sh-ordinal-numbers#ordinal-numbers-pipe",
+  "repository": {"url": "https://github.com/HakimeSheikhalishahi/sh-ordinal-numbers"}
+}
