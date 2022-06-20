@@ -2,7 +2,7 @@
 
 <h2 align="center">Angular Copy To Clipboard (Directive/Component/Content projection)</h2>
  
- ![copyToClipboard](https://user-images.githubusercontent.com/51107856/162959789-21243f3c-e5ad-4bad-abf6-9fe602653c44222.png?raw=true "Angular Copy To Clipboard")
+ ![copyToClipboard](https://user-images.githubusercontent.com/51107856/174605200-ced132ae-41bc-4911-b737-498a7c3d3e28.png?raw=true "Angular Copy To Clipboard")
 # Demo
 
 <a href='https://stackblitz.com/edit/angular-zavrzb?file=src%2Fapp%2Fapp.component.ts,src%2Fapp%2Fapp.component.html'>
